@@ -11,9 +11,9 @@ from texts import HELP_TEXT, ABOUT_TEXT
 # Follow on GitHub @BotCreator99
 
 # Update key and token 
-bot_token = os.environ.get("TOKEN", "")
-api_hash = os.environ.get("HASH", "")
-api_id = os.environ.get("ID", "")
+bot_token = os.environ.get("TOKEN", "5825894034:AAGqtHzU_aMx3F5tpxIo2j2DdCdiJDb3b74")
+api_hash = os.environ.get("HASH", "3531771c0d58b9ffc44d12f38c5edbf5")
+api_id = os.environ.get("ID", "13556430")
 app = Client("my_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
 
@@ -37,7 +37,7 @@ def loopthread(message):
                              reply_to_message_id=message.id)
     else:
       msg = app.send_message(message.chat.id,
-                             "😍 __bypassing...__",
+                             "😍 __Uploading...__",
                              reply_to_message_id=message.id)
 
   link = ""
@@ -70,10 +70,10 @@ def send_start(client: pyrogram.client.Client,
                message: pyrogram.types.messages_and_media.message.Message):
   app.send_message(
     message.chat.id,
-    f"__👋 Hi **{message.from_user.mention}**, I am shareus bypasser bot, just send me any shareus links and i will you get you results.\n👉 More command use :- /help /about \n\n<b>This bot power by @GreyMatter_Bots</b>",
+    f"__👋 Hey **{message.from_user.mention}**,\n\n I Am Shareus Link Bypasser Robot, just send me any shareus links and i will you get you results.\n\n More Command You Can Use:- /help & /about \n\n<b>[This bot powered by @Worldofmovies8]</b>",
     reply_markup=InlineKeyboardMarkup([[
       InlineKeyboardButton(
-        "❤ Developer", url="https://github.com/BotCreator99")
+        "Developer", url="https://t.me/royaldwip")
     ]]),
     reply_to_message_id=message.id)
 
@@ -108,7 +108,7 @@ def receive(client: pyrogram.client.Client,
 def docthread(message):
   if message.document.file_name.endswith("dlc"):
     msg = app.send_message(message.chat.id,
-                           "😍 __bypassing...__",
+                           "😍 __Uploading...__",
                            reply_to_message_id=message.id)
     print("sent DLC file")
     sess = requests.session()
