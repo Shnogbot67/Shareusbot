@@ -21,6 +21,3 @@ $ cd ShareusBypasserBot
 $ pip3 install -r requirements.txt
 $ python3 main.py
 ```
-# 👏 Credits.
-- [BotCreator99](https://github.com/BotCreator99) Repo Creator.   
-- [GreyMatter's](https://github.com/Greymattersbot) Repo promoter.
