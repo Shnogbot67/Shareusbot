@@ -11,7 +11,7 @@ from texts import HELP_TEXT, ABOUT_TEXT
 # Follow on GitHub @BotCreator99
 
 # Update key and token 
-bot_token = os.environ.get("TOKEN", "5825894034:AAGqtHzU_aMx3F5tpxIo2j2DdCdiJDb3b74")
+bot_token = os.environ.get("TOKEN", "5825894034:5802122071:AAGhwOoT3jvZx1al4BRsxCs6oi_kJx0ZAAo")
 api_hash = os.environ.get("HASH", "3531771c0d58b9ffc44d12f38c5edbf5")
 api_id = os.environ.get("ID", "13556430")
 app = Client("my_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
@@ -108,7 +108,7 @@ def receive(client: pyrogram.client.Client,
 def docthread(message):
   if message.document.file_name.endswith("dlc"):
     msg = app.send_message(message.chat.id,
-                           "😍 __Uploading...__",
+                           "😍 __Bypassing Your Link 🔗__",
                            reply_to_message_id=message.id)
     print("sent DLC file")
     sess = requests.session()
