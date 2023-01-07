@@ -37,7 +37,7 @@ def loopthread(message):
                              reply_to_message_id=message.id)
     else:
       msg = app.send_message(message.chat.id,
-                             "😍 __Uploading...__",
+                             "😍 __Your Link Successfully Bypassed Now Uploading..__",
                              reply_to_message_id=message.id)
 
   link = ""
@@ -70,10 +70,10 @@ def send_start(client: pyrogram.client.Client,
                message: pyrogram.types.messages_and_media.message.Message):
   app.send_message(
     message.chat.id,
-    f"__👋 Hey **{message.from_user.mention}**,\n\n I Am Shareus Link Bypasser Robot, just send me any shareus links and i will you get you results.\n\n More Command You Can Use:- /help & /about \n\n<b>[This bot powered by @Worldofmovies8]</b>",
+    f"__👋 Hey **{message.from_user.mention}**,\n\n I Am Shareus Link Bypasser Robot, just send me any shareus links and i will you get you results.\n\n<b>[This bot powered by @Worldofmovies8]</b>",
     reply_markup=InlineKeyboardMarkup([[
       InlineKeyboardButton(
-        "Developer", url="https://t.me/royaldwip")
+        "♻️ Channel ♻️", url="https://t.me/Worldofmovies8")
     ]]),
     reply_to_message_id=message.id)
 
