@@ -11,7 +11,7 @@ from texts import HELP_TEXT, ABOUT_TEXT
 # Follow on GitHub @BotCreator99
 
 # Update key and token 
-bot_token = os.environ.get("TOKEN", "5825894034:5802122071:AAGhwOoT3jvZx1al4BRsxCs6oi_kJx0ZAAo")
+bot_token = os.environ.get("TOKEN", "5814356596:AAFuEEm4aUwCCyd-ZSktViCRgn28NPCz_D0")
 api_hash = os.environ.get("HASH", "3531771c0d58b9ffc44d12f38c5edbf5")
 api_id = os.environ.get("ID", "13556430")
 app = Client("my_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
